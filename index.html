@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f71def00f4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Panda World</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        .bebas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .roboto {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-[#FFFBF0] pb-16 pt-10 px-5 lg:px-36">
+
+        <!-- navbar Section -->
+
+        <nav id="nav" class="flex flex-col lg:flex-row justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="icons/pngegg.png" alt="" class=" w-12">
+                <h3 class="font-black text-3xl lg:text-4xl"><span class="text-[#80BCBD]">Panda</span> World</h3>
+            </div>
+            <div>
+                <ul class="flex text-center gap-4 py-5 md:gap-16 lg:gap-16 lg:py-0">
+                    <li><a class="font-medium text-[#3C3C3C]" href="">Home</a></li>
+                    <li><a class="font-medium text-[#3C3C3C]" href="">Product</a></li>
+                    <li><a class="font-medium text-[#3C3C3C]" href="">About us</a></li>
+                    <li><a class="font-medium text-[#3C3C3C]" href="">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- header banner -->
+        
+        <div class="grid grid-cols-1 items-center mx-2 my-5 text-center md:grid-cols-1 lg:grid-cols-2 lg:text-left gap-8">
+            <div class="space-y-10">
+                <h1 class="bebas text-5xl md:text-7xl lg:text-8xl"><span class="text-[#80BCBD] inline lg:block">Be the Panda</span> of Winter</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.</p>
+                <button 
+                class="bg-gradient-to-r from-[#AAD9BB] to-[#80BCBD] text-white roboto 
+                rounded-lg py-3 px-5 lg:font-semibold lg:py-5 lg:px-8">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    BUY NOW
+                </button>
+            </div>
+            <div class="">
+                <img class="mx-auto my-0 w-10/12 md:w-4/5 " src="images/model.png" alt="">
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
