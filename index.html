@@ -16,6 +16,9 @@
         @import 'daisyui/dist/full.css';
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+        body,html {
+            scroll-behavior: smooth;
+        }
         .bebas {
             font-family: "Bebas Neue", sans-serif;
         }
@@ -44,9 +47,9 @@
             <div>
                 <ul class="flex text-center gap-4 py-5 md:gap-16 lg:gap-16 lg:py-0">
                     <li><a class="font-medium text-[#3C3C3C]" href="">Home</a></li>
-                    <li><a class="font-medium text-[#3C3C3C]" href="">Product</a></li>
-                    <li><a class="font-medium text-[#3C3C3C]" href="">About us</a></li>
-                    <li><a class="font-medium text-[#3C3C3C]" href="">Contact us</a></li>
+                    <li><a class="font-medium text-[#3C3C3C]" href="#women">Product</a></li>
+                    <li><a class="font-medium text-[#3C3C3C]" href="#info">About us</a></li>
+                    <li><a class="font-medium text-[#3C3C3C]" href="#footer">Contact us</a></li>
                 </ul>
             </div>
         </nav>
@@ -191,7 +194,7 @@
             <div class="flex flex-col gap-4 w-full order-last md:order-first lg:order-first">
                 
                 <div class="shadow-md p-3 lg:p-7">
-                    <div class="flex items-center gap-4">
+                    <div class="flex flex-col text-center lg:flex-row lg:text-left items-center gap-4">
                         <!-- icon -->
                         <div>
                             <img class="w-[78px]" src="icons/house.png" alt="">
@@ -205,30 +208,30 @@
                     </div>
                 </div>
                 <div class="shadow-md p-3 lg:p-7">
-                    <div class="flex items-center gap-4">
+                    <div class="flex flex-col text-center lg:flex-row lg:text-left items-center gap-4">
                         <!-- icon -->
                         <div>
-                            <img class="w-[78px]" src="icons/house.png" alt="">
+                            <img class="w-[78px]" src="icons/box.png" alt="">
                         </div>
                         <!-- text -->
                         <div class="space-y-2 lg:space-y-4">
-                            <h3 class="roboto font-bold text-xl lg:text-3xl">Find the Perfect Fit</h3>
-                            <p class="roboto text-[#3E3E3E] text-xs lg:w-[275px]">Everybody is different, which is why we
-                                offer styles for every body.</p>
+                            <h3 class="roboto font-bold text-xl lg:text-3xl">Free Exchanges</h3>
+                            <p class="roboto text-[#3E3E3E] text-xs lg:w-[275px]">One of the many reasons you can shop
+                                with peace of mind..</p>
                         </div>
                     </div>
                 </div>
                 <div class="shadow-md p-3 lg:p-7">
-                    <div class="flex items-center gap-4">
+                    <div class="flex flex-col text-center lg:flex-row lg:text-left items-center gap-4">
                         <!-- icon -->
                         <div>
-                            <img class="w-[78px]" src="icons/house.png" alt="">
+                            <img class="w-[78px]" src="icons/question.png" alt="">
                         </div>
                         <!-- text -->
                         <div class="space-y-2 lg:space-y-4">
-                            <h3 class="roboto font-bold text-xl lg:text-3xl">Find the Perfect Fit</h3>
-                            <p class="roboto text-[#3E3E3E] text-xs lg:w-[275px]">Everybody is different, which is why we
-                                offer styles for every body.</p>
+                            <h3 class="roboto font-bold text-xl lg:text-3xl">Contact Our Seller</h3>
+                            <p class="roboto text-[#3E3E3E] text-xs lg:w-[275px]">They are here to help you. That's quite 
+                                literally what we pay them for.</p>
                         </div>
                     </div>
                 </div>
@@ -242,7 +245,7 @@
         </section>
     </main>
 
-    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-36">
+    <footer id="footer" class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-10 lg:mt-36">
         <nav class="grid grid-flow-col gap-4">
           <a class="link link-hover">About us</a>
           <a class="link link-hover">Contact Us</a>
